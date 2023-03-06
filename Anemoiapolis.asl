@@ -24,7 +24,7 @@ update {
 }
 
 start {
-	return current.state == 1 && current.Scene == 1 && old.Scene == 0;
+	return ((current.state == 1 && current.Scene == 1 && old.Scene == 0) || current.Scene == 16);
 }
 
 split {
